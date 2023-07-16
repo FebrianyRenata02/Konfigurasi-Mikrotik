@@ -1,0 +1,15 @@
+KONFIGURASI MIKROTIK
+
+1. Winbox
+2.Webfig (web browser)
+3. Telnet/SSH
+
+Rekomendasi IP Service
+
+1. Disable service yang tidak diperlukan
+2. Mengganti port default
+3. setting Available From
+
+Management User di MIkrotik
+
+Command Line di Mikrotik

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Subnetting</title>
+</head>
+
+<body>
+    <p>IP Broadcast</p>
+    <p>IP Range</p>
+    <br />
+    <p>8 komputer, prefix? /27</p>
+    <p>192.168.1.1/24</p>
+    <p>/24 -> Prefix (menunjukan jumlah ip yang mungkin di gunakan)</p>
+    <p>/24 -> 256</p>
+    <p>/26 -> 64</p>
+    <br />
+    <p>angka di dalam IPv4 -> 0-255</p>
+    <p>192.168.1.10/25</p>
+    <p>Total IP -> 32 - prefix -> 32-25=7 2^7 = 128</p>
+    <p>Subnetmask -> representasi dari prefix</p>
+    <p>----- Mikrotik -> prefix -----</p>
+    <p>----- Cisco -> ubnetmask -----</p>
+    <p>----- Windows -> ubnetmask -----</p>
+    <br />
+    <p>Rumusnya</p>
+    <p>256 - total IP -> 256 - 128 = 128 -> 255.255.255.128</p>
+    <br />
+    <p>IP Network (IP Pertama) 0 128 129.168.1.0</p>
+    <p>Network nya adalah 0 192.168.1.0</p>
+    <br />
+    <p>IP Boardcast (IP Terakhir) 127 ----- 255 ----- 192.168.1.127</p>
+    <p>Broadcast nya adalah 127 192.168.1.127</p>
+    <br />
+    <p>bolok subnet</p>
+    <br />
+    <p>IP Network & IP Broadcast tidak akan pernah bisa di gunakan</p>
+    <p>IP Range (ip yang bisa di gunakan) -> 192.168.1.1. - 192.168.1.126</p>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <p>2^0 -> 1</p>
+    <p>2^1 -> 2</p>
+    <p>2^2 -> 4</p>
+    <p>2^3 -> 8</p>
+    <p>2^4 -> 16</p>
+    <p>2^5 -> 32</p>
+    <p>2^6 -> 64</p>
+    <p>2^7 -> 128</p>
+    <p>2^8 -> 256</p>
+    <p>172.16.10.100/26</p>
+
+    <br />
+    <p>Total IP -> 32 - prefix -> 32-26=6 -> 2^6 = 64</p>
+    <p>Subnetmask -> 256 - Total IP -> 256-64=192 -> 255.255.255.192</p>
+    <p>IP Network 0 64 128 192 256 ------ 172.16.19.64</p>
+    <p>IP Broadcast 63 127 191 255 ------ 127.16.10.127</p>
+    <p>IP Range ------ 172.16.10.65 - 172.16.10.126</p>
+</body>
+
+</html>
